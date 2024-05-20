@@ -35,7 +35,8 @@ sudo apt autoremove -y
 sudo apt install build-essential -y
 
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.11 python3.11-venv -y
+sudo apt install python3.12 python3.12-venv -y
+digitar python3.12 -V    (3,12 foi a versao que eu instalei)
 
 sudo apt install nginx -y
 sudo apt install certbot python3-certbot-nginx -y
@@ -114,14 +115,14 @@ Cole os dados.
 
 ```
 cd ~/agendaapp
-python3.11 -m venv venv
+python3.12 -m venv venv
 . venv/bin/activate
 pip install --upgrade pip
 pip install django
 pip install pillow
 pip install gunicorn
 pip install psycopg
-pip install faker
+pip install faker (instalar dados fake)
 
 python manage.py runserver
 python manage.py migrate
